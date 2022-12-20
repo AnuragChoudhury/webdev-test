@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="description" content="Learning to build website as a hobby">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="AC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome to HTML</title>
+<style>
+    .myDiv{
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+    }
+    .myDiv2{
+        border: 5px outset red;
+        background-color:antiquewhite;
+        text-align: left;
+    }
+    .simpleBoder{
+        border: 3px outset black;
+    }
+    /* Note the comment syntax here */
+    /* A tag can also be styled */
+    aside{
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+    }
+    .horizontal_list{
+        float:left;
+        display: block;
+        color:white;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        background-color: black;
+    }
+    a{
+        padding: 10px;
+        color: white;
+    }
+    /* :hover is a pseudo class. There are other pseudo classes like :visited, :link, :active*/
+    a:hover{
+        background-color: white;
+        color: black;
+    }
+</style>
 </head>
 <body>
 
-<h1>This is a Heading in HTML</h1>
-<p>This is a paragraph123.</p>
+<h1 id="home0" class="simpleBoder">This is a Heading in HTML!</h1>
+<p class="simpleBoder">This is a paragraph123.</p>
+<p class="simpleBoder">This is a new paragraph.</p>
+<span>Trying out span</span>
+<span>Looks like 'span' is inline, and 'p' is block level</span>
+<p >
+    This is a paragraph.
+    <span>This span is inside the paragraph</span>
+</p>
+<h2 id="home" class="simpleBoder">This is a sub heading
+    <span style="color:blueviolet;">This is span inside the sub heading</span>
+    <p>This is a para inside the sub heading. Notice the extra space below the para !!!</p>
+</h2>
+
+<div id="home2" class="myDiv">
+    This is div 1
+    <!--<h2>This is a 'div' block</h2>-->
+    <p>This loock cooooool!!! Everything center aligned might not be a good idea.</p>
+</div>
+
+<div id="div_id2" class="myDiv2">
+    This is a separate 'div' block.
+</div>
+<p><a href="#home0" style="color: black;">Jump within the same page</a></p>
+<p><a href="page2.html" style="color: black;">Jump to page 2</a></p>
+<aside style="background-color: aquamarine;">
+    This is 'aside' tag.
+    <p style="background-color: bisque;text-align: center;">This is a 'p' inside aside tag.
+    <span>This is 'span' inside 'p'.</span></p>
+    <span style="background-color: yellow;"> Span 2
+    <p>'p' inside span 2 makes no sense</p>
+    </span>
+</aside>
+<h3>Ordered Lists</h3>
+<ol type="1">
+    <li>Coffee</li>
+        <ol type="a">
+            <li>Black</li>
+            <li>Cappuchino</li>
+        </ol>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<h3>Unordered list</h3>
+
+<div>
+<ul>
+    <li class="horizontal_list"><a href="#home0">Home</a></li>
+    <li class="horizontal_list"><a>News</a></li>
+    <li class="horizontal_list"><a>Contact</a></li>
+    <li class="horizontal_list"><a>About</a></li>
+</ul>
+</div>
+<!--<footer>
+    This is footer........................... without any styling
+</footer>-->
 
 </body>
 </html>
