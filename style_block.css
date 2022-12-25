@@ -1,0 +1,30 @@
+a:visited {
+    color: red;
+}
+a.decorated{
+    text-decoration:none
+}
+#divbox{
+    padding: 2px;
+    width: 50px;
+}
+#p_bounded{
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+}
+p.bounded:hover,p.bounded:focus{
+    background-color: bisque;
+}
+/*Because of border around body and html elements, the periphery border looked thicker than usual. As the borders were getting added*/
+/*Because of the specificity rule, this is getting picked up isnted of the global rule. Number of elements are more here*/
+body,html{
+    border: none;
+}
+/*Resetting the styling*/
+* {
+    border:1px outset black;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS experimentation page !!!
+        </title>
+        <style>
+            #id_sel1{
+                font-size: 30px;
+            }
+            div > p > span{
+                background-color: yellow;
+                color: red;
+            }
+            a:visited{
+                color: red;
+            }
+            a:active{
+                color: blue;
+            }
+            /*Child selector*/
+            div > p > span.different{
+                background-color: green;
+                color: yellow;
+            }
+            /*Descendant selector*/
+            div span{
+                color: brown;
+            }
+            /*Adjacent sibling selector*/
+            div+span{
+                background-color: bisque;
+            }
+            /*General sibling selector*/
+            div~p{
+                background-color: blueviolet;
+            }
+            .blocklimwidth{
+                width:200px;
+            }
+            *  li:nth-child(odd){
+                background-color: gray;
+            }
+            /*Pseudo Elements*/
+            *::selection{
+                color: brown;
+                background-color: bisque;
+            }
+            textarea{
+                background-color: aquamarine;
+                font-size: 15px;
+            }
+            textarea:focus{
+                background-color: yellowgreen;
+            }
+            /*Boxes would help in differentiating block vs inline*/
+            * {
+                border: 1px outset black;
+            }     
+        </style>
+    </head>
+    <body>
+        <a href="index.html" style="text-decoration: none;">Take me back inline</a>
+        <a href="index.html" style="text-decoration: none; display: block;">Take me back BLOCK(standalone!!!)</a>
+        <!--Note the use of "entity reference"-->
+        <p><a href="index.html" style="text-decoration: none;">Take me back (block level as it sits inside &ltp&gt)</p></a></p>
+        <div id="id_sel1">
+            <textarea>Child selector. This is a textarea.
+            </textarea>
+            <p>This is a text with ID selector <span>3rd degree Child selector span</span></p>
+        </div>
+        <div id="id_sel1">
+            <textarea>Child selector combined with class selector.</textarea>
+            <p>This is a text with ID selector <span class="different">3rd degree Child selector span</span></p>
+        </div>
+        <div id="id_sel1">
+            <textarea>This is a descendant selector</textarea>
+            <article>
+                <p>This is a text with ID selector <span class="different">Here SPAN is not a direct child of div</span></p>
+            </article>
+        </div>
+        <h3>Adjacent sibling selector</h3>
+        <div class="blocklimwidth">div</div>
+        <span>span</span>
+        <p>p1</p>
+        <p>p2</p>
+        <h3>nth child test</h3>
+        <div>
+            <ul class="nthchild">
+                <li>cake</li>
+                <li>biscuit</li>
+                <li>fruits</li>
+                <li>samosa</li>
+                <li>coke</li>
+            </ul>
+        </div>
+    </body>
+</html>
