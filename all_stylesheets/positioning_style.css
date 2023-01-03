@@ -1,0 +1,77 @@
+/*Resetting Margin and Padding*/
+* {
+    border: 1px solid brown;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body, html, b, i{
+    border: none;
+}
+ol{
+    padding-left: 30px;
+}
+
+p {
+    padding: 5px;
+}
+
+p.clear_float{
+    padding: 0px;
+    border: none;
+    clear: both;
+}
+
+.kill_borders{
+    border: 0px;
+}
+
+.clear_float{
+    clear: both;
+}
+
+a.horizontal_list{
+    text-decoration: none;
+    color: black;
+}
+
+li.floatleft{
+    float: left;
+    display: block; /*Without this, the numbers or dots from the list comes up*/
+    border: none;
+    padding: 10px;
+    background-color: bisque;
+}
+
+li.hovereffects:hover{
+    background-color: #ffb366;
+}
+
+span.floatleft{
+    float: left;
+    border: none;
+    padding: 10px;
+    background-color: bisque;
+}
+
+span.hovereffects:hover{
+    background-color: #ffb366;
+}
+
+h2.rel_pos{
+    position: relative;
+}
+
+div.rel_pos{
+    position: relative;
+    top:30px;
+    left: 30px;
+}
+div.abs_pos{
+    position: absolute;
+    left: 50px;
+}
+
+p.abs_pos{
+    position: absolute;
+}

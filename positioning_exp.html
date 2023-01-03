@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Float, relative and absolute positioning !!!
+        </title>
+        <link rel="stylesheet" href="./all_stylesheets/positioning_style.css">
+    </head>
+    <body>
+        <p><a href="index.html">Take me back</a></p>
+        <h1>Trying out float</h1>
+        <p></p>
+        <div>
+            <h2>Horizontal menu with unordered list (demonstrating effect of float on ul)</h2>
+            <div style="padding: 50px;">
+                <aside>Note that whatever parent tag that contains the floating elements collapses. That's why the padding is also not uniform(Note the bottom padding). Additional bottom padding has to be specified to compensate.</aside>
+                <ul style="padding: 10px;">
+                    <li class="floatleft">Index</li>
+                    <li class="floatleft">Page 2</li>
+                    <li class="floatleft ">Box model</li>
+                </ul>
+            </div>
+            <p class="clear_float">End float using 'clear'</p>
+        </div>
+        <p></p>
+
+        <div>
+            <h2>Horizontal menu with unordered list</h2>
+            <!--Note how in the bottom we have to give thicker padding (because of float) to achieve the same result-->
+                <ul style="padding: 10px 0px 50px 10px;">
+                    <li class="floatleft hovereffects"><a class="kill_borders horizontal_list" href="index.html">Index</a></li>
+                    <li class="floatleft hovereffects"><a class="kill_borders horizontal_list" href="page2.html">Page 2</a></li>
+                    <li class="floatleft hovereffects"><a class="kill_borders horizontal_list" href="box_model.html">Box model</a></li>
+                </ul>
+            <p class="clear_float">End float using 'clear'</p>
+        </div>
+        <p></p>
+
+        <div>
+            <h2>Horizontal menu with unordered list (better way to clear float)</h2>
+                <div style="padding: 10px">
+                    <p>Note in the code how float is cleared.</p>
+                    <ul style="border: none;">
+                        <li class="floatleft hovereffects"><a class="kill_borders horizontal_list" href="index.html">Index</a></li>
+                        <li class="floatleft hovereffects"><a class="kill_borders horizontal_list" href="page2.html">Page 2</a></li>
+                        <li class="floatleft hovereffects"><a class="kill_borders horizontal_list" href="box_model.html">Box model</a></li>
+                    </ul>
+                    <p class="clear_float"></p>
+                </div>
+            <p class="clear_float">End float using 'clear'</p>
+        </div>
+        <p></p>
+
+        <div>
+            <h2>Horizontal menu with span</h2>
+            <div style="padding: 10px 0px 50px 10px;">
+                <span style="display: block;">Here 'span' has been converted to a block level element. Same result has been achieved using 'span' with float(for fun). But without float also it's easily possible as 'span' is an <b><i>inline</i></b> element</span>
+                <span class="kill_borders hovereffects floatleft"><a class="kill_borders horizontal_list" href="index.html">Index</a></span>
+                <span class="kill_borders hovereffects floatleft"><a class="kill_borders horizontal_list" href="page2.html">Page 2</a></span>
+                <span class="kill_borders hovereffects floatleft"><a class="kill_borders horizontal_list" href="box_model.html">Box model</a></span>
+            </div>
+            <p class="clear_float">End float using 'clear'</p>
+        </div>
+        <p></p>
+
+        <div>
+            <h2>Horizontal menu with span (better way to clear float)</h2>
+            <div style="padding: 10px;">
+                <span style="display: block;">Here 'span' has been converted to a block level element. Same result has been achieved using 'span' with float(for fun). But without float also it's easily possible as 'span' is an <b><i>inline</i></b> element</span>
+                <span class="kill_borders hovereffects floatleft"><a class="kill_borders horizontal_list" href="index.html">Index</a></span>
+                <span class="kill_borders hovereffects floatleft"><a class="kill_borders horizontal_list" href="page2.html">Page 2</a></span>
+                <span class="kill_borders hovereffects floatleft"><a class="kill_borders horizontal_list" href="box_model.html">Box model</a></span>
+                <!--A more elegant way to clear float-->
+                <p class="clear_float kill_borders" style="display: block;"></p>
+            </div>
+            <p style="padding: 0px;">Float was ended previously using 'clear'</p>
+        </div>
+        <p></p>
+
+        <!--
+            --------------------------
+            -- Relative Positioning --
+            --------------------------
+        -->
+        <h1>
+            Trying out relative positioning
+        </h1>
+        <div class="rel_pos">
+            <p style="position: static;">Teting testing 1 2 3</p>
+        </div>
+        <p>
+            fsdfsd
+        </p>
+        <ol>
+            <li>Note that the space of the div block had been reserved. Hence the next 'p' block is overlapping with the shifted 'div' block</li>
+            <li>Also note that the 'p' inside the shifted 'div' moved with the div even though it has been declared staic.</li>
+        </ol>
+        <p></p>
+
+        <!--
+            --------------------------
+            -- Absolute Positioning --
+            --------------------------
+        -->
+        <h1>Trying out absolute positioning</h1>
+        <div class="abs_pos" style="padding:10px;">
+            <p class="abs_pos" style="margin:25px; width: 50px;height: 55px;background-color: aqua;opacity:0.5; z-index: 1;">1</p>
+            <p class="abs_pos" style="width: 100px;height: 100px;background-color: red;"><br><br><br>&nbsp &nbsp &nbsp 2</p>
+        </div>
+        <div>
+            Here is a new div
+        </div>
+        <ol style="margin-top: 90px;">
+            <li>Note that there is no way to clear absolutely positioned blocks like float</li>
+            <li>If we want to place anything after an absolutely positioned block, the parity or margin needs to calculated using JS or manually calculated</li>
+        </ol>
+        <div>
+            The subsequent 'div's should be perfectly fine.
+        </div>
+    </body>
+</html>
