@@ -1,0 +1,142 @@
+/*Resetting the style*/
+* {
+    box-sizing: border-box;
+    /*border: 1px gold solid;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html, b, i{
+    border: none;
+}
+
+/*The container element will have the width 100%*/
+row {
+    width:100%;
+}
+
+.bkg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media (min-width: 860px) {
+    .background{
+        /*'background' overrides other background property.*/
+        /*background-repeat: no-repeat;*/
+        /*background-position-x: center;*/
+        /*background-position-y: center;*/
+        /*background-attachment: fixed;*/
+        background: url("./../all_images/tree_media.jpg") no-repeat center center fixed; 
+        background-size: cover;
+    }
+    *{
+        color: #ffffff;
+    } 
+
+    /*Creating 12 column layout*/
+    .col-m1-1, .col-m1-2, .col-m1-3, .col-m1-4, .col-m1-5, .col-m1-6, .col-m1-7, .col-m1-8, .col-m1-9, .col-m1-10, .col-m1-11, .col-m1-12 {
+        float: left;
+        border: 1px solid green; /*For debug*/
+    }
+    .col-m1-1{
+        width:8.33%;
+    }
+    .col-m1-2{
+        width:16.66%;
+    }
+    .col-m1-3{
+        width:25%;
+    }
+    .col-m1-4{
+        width:33.33%;
+    }
+    .col-m1-5{
+        width:41.66%;
+    }
+    .col-m1-6{
+        width:50%;
+    }
+    .col-m1-7{
+        width:58.33%;
+    }
+    .col-m1-8{
+        width:66.66%;
+    }
+    .col-m1-9{
+        width:74.99%;
+    }
+    .col-m1-10{
+        width:83.33%;
+    }
+    .col-m1-11{
+        width:91.66%;
+    }
+    .col-m1-12{
+        width:100%;
+    }
+
+    .height1-m1{
+        height: 200px;
+    }
+}
+
+@media (min-width:200px) and (max-width: 859px) {
+    .background{
+        background: url("./../all_images/valley_media.jpg") no-repeat center center fixed; 
+        background-size: cover;
+    }
+    *{
+        color: #000000;
+    }  
+    body {
+        font-size: 80%
+    }
+
+    /*Creating 12 column layout*/
+        .col-m2-1, .col-m2-2, .col-m2-3, .col-m2-4, .col-m2-5, .col-m2-6, .col-m2-7, .col-m2-8, .col-m2-9, .col-m2-10, .col-m2-11, .col-m2-12 {
+            float: left;
+            border: 1px solid green; /*For debug*/
+        }
+        .col-m2-1{
+            width:8.33%;
+        }
+        .col-m2-2{
+            width:16.66%;
+        }
+        .col-m2-3{
+            width:25%;
+        }
+        .col-m2-4{
+            width:33.33%;
+        }
+        .col-m2-5{
+            width:41.66%;
+        }
+        .col-m2-6{
+            width:50%;
+        }
+        .col-m2-7{
+            width:58.33%;
+        }
+        .col-m2-8{
+            width:66.66%;
+        }
+        .col-m2-9{
+            width:74.99%;
+        }
+        .col-m2-10{
+            width:83.33%;
+        }
+        .col-m2-11{
+            width:91.66%;
+        }
+        .col-m2-12{
+            width:100%;
+        }
+
+        .height1-m2{
+            height: 100px;
+        }
+}
