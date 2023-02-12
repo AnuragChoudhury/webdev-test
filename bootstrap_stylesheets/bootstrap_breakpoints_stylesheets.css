@@ -1,0 +1,63 @@
+/*Default or Extra Extra Large screen*/
+.responsive {
+    background-color: navy;
+}
+.header {
+    background-color: burlywood;
+    color: yellow;
+} 
+
+/*Extra small screen*/
+@media only screen and (max-width: 575.98px){
+    .responsive {
+        background-color: black;
+    }
+    .header {
+        background-color: black;
+        color: red;
+    }
+}
+
+/*Small screen*/
+@media only screen and (min-width:576px) and (max-width:767.98px){
+    .responsive {
+        background-color: red;
+    }
+    .header {
+        background-color: brown;
+        color: white;
+    } 
+}
+
+/*Medium screen*/
+@media only screen and (min-width:768px) and (max-width:991.98px){
+    .responsive {
+        background-color: violet;
+    }
+    .header {
+        background-color: tomato;
+        color: yellowgreen;
+    } 
+}
+
+/*Large screen*/
+@media only screen and (min-width:992px) and (max-width:1199.98px){
+    .responsive {
+        background-color: saddlebrown;
+    }
+    .header {
+        background-color: violet;
+        color: blueviolet;
+    } 
+}
+
+/*Extra Large screen*/
+@media only screen and (min-width:1200px) and (max-width:1399.98px){
+    .responsive {
+        background-color: red;
+    }
+    .header {
+        background-color: tan;
+        color: crimson;
+    } 
+}

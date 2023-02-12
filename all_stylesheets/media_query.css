@@ -31,6 +31,7 @@ row {
         background: url("./../all_images/tree_media.jpg") no-repeat center center fixed; 
         background-size: cover;
     }
+    /*Text colour*/
     *{
         color: #ffffff;
     } 
@@ -90,6 +91,7 @@ row {
     *{
         color: #000000;
     }  
+    /*Scaling down the font size for smaller devices*/
     body {
         font-size: 80%
     }

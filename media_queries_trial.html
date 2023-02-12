@@ -5,6 +5,7 @@
             Experimenting with media queries !!!
         </title>
         <meta charset="utf-8">
+        <!--Viewport converts the actual phone resolution into a resolution more in line with device dimentions-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./all_stylesheets/media_query.css">
     </head>
@@ -12,6 +13,8 @@
         <h1 style="padding: 10px;">Welcome to media queries !!!</h1>
 
         <div class="row">
+            <!--Note that double quotes is missing from url-->
+            <!--While the same thing in style sheet would have had a double quote-->
             <div class="bkg height1-m1 height1-m2 col-m1-4 col-m2-5" style="background-image: url(./../all_images/812_media.jpg);">
             </div>
             <div class="bkg height1-m1 height1-m2 col-m1-4 col-m2-5" style="background-image: url(./../all_images/street_media.jpg);">
@@ -19,7 +22,7 @@
             <p style="clear: both;"></p>
         </div>
         <div class="row">
-            <div style="padding:10px 10px 5px 0px" class="col-m1-12 col-m1-12">
+            <div style="padding:10px 10px 5px 0px" class="col-m1-12 col-m2-12">
                 <h3 style="padding-bottom:3px;">
                     Ferrari 812 superfast
                 </h3>
@@ -37,8 +40,10 @@
         </div>
         <div class="row">
             <div class="height1-m1 height1-m2 col-m1-4 col-m2-3">
+                <!--Note that although the height and width parameter looks trivial to mention, but it's necessary if we want the image to be contained within it's parent container-->
                 <img src="./all_images/812_media.jpg" style="height: 100%; width: 100%;">
             </div>
+                <!--Note that although the height and width parameter looks trivial to mention, but it's necessary if we want the image to be contained within it's parent container-->
             <div class="height1-m1 height1-m2 col-m1-4 col-m2-3">
                 <img src="./all_images/street_media.jpg" style="height: 100%; width: 100%;">
             </div>
