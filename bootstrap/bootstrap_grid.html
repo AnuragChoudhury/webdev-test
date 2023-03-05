@@ -20,13 +20,280 @@
     <h1>Bootstrap grids</h1>
     <br>
 
+    <div class="container">
+      <h3>Nesting of display:flex (row class of BootStrap)</h3>
+      <p style="margin: 0px;">Trying out nesting on my own</p>
+      <div class="row">
+        <div class="col bg-danger border border-2 border-dark">
+          Row 1a Col 1
+        </div>
+        <div class="col">
+            <div class="row">
+              <div class="col bg-danger border border-2 border-dark">
+                Row 1b Col 1
+              </div>
+              <div class="col bg-danger border border-2 border-dark">
+                Row 1b Col 2
+              </div>
+              <div class="col bg-danger border border-2 border-dark">
+                Row 1b Col 3
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg-success border border-2 border-dark">
+          Row 2 Col 1
+        </div>
+        <div class="col bg-info border border-2 border-dark">
+          Row 2 Col 2
+        </div>
+      </div>
+    </div>
 
+    <br>
+    <!--Toomany columns-->
+    <div class="container-md">
+      <div class="row">
+        <div class="col">
+          <h3>Demonstrating the use of too many columns</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Notice the overflow
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 1
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 2
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 3
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 4
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 5
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 6
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 7
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 8
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 9
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 10
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 11
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 12
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 13
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 14
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 15
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 16
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 7
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 18
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 19
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 20
+        </div>
+        <div class="col bg-primary-subtle border border-1 border-dark">
+          Col 21
+        </div>
+      </div>
+    </div>
 
+    <!--Variable width column-->
+    <div class="container my-3">
+      <div class="row">
+        <h3>Demonstrating variable width columns</h3>
+      </div>
+      <div class="row">
+        <div class="col-6 bg-primary border border-1 border-dark">
+          Col 1
+        </div>
+        <div class="col-2 bg-primary border border-1 border-dark">
+          Col 2
+        </div>
+        <div class="col-2 bg-primary border border-1 border-dark">
+          Col 3
+        </div>
+        <div class="col-2 bg-primary border border-1 border-dark">
+          Col 4
+        </div>
+      </div>
+    </div>
 
+    <!--Selling cars-->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6 col-lg-8 col-xl-12">
+          <h4>Easy way to find the right car</h4>
+          Easy way to find the right car
+          Finder is a leading digital marketplace for the automotive industry that connects car shoppers with sellers.
+        </div>
+        <div class="col-6 col-lg-4 col-xl-12">
+          <img src="../bootstrap_images/caf.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
 
+    <!--Row Columns-->
+    <div class="container my-5">
+      <div class="row">
+        <h3>Demonstrating Row-Columns</h3>
 
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+        <div class="col bg-primary border border-1 border-dark">
+          Column 1
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 2
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 3
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 4
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 5
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 6
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 7
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 8
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 9
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 10
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 11
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 12
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 13
+        </div>
+        <div class="col bg-primary border border-1 border-dark">
+          Column 14
+        </div>
+      </div>
+    </div>
 
+    <!--Trying to mimic row column-->
+    <div class="container my-5">
+      <div class="row">
+        <h3>Mimicking Row Columns</h3>
+        <div style="padding-left: 0px; padding-bottom:1vw;">
+          Notice that the breakpoint classes have to be specified for each column rather than specifying just for the row
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 1
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 2
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 3
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 4
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 5
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 6
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 7
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 8
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 9
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary border border-1 border-dark">
+          Column 10
+        </div>
+      </div>
+    </div>
 
+    <!--Nesting example from tutorial-->
+    <div class="container">
+      <h3>More complicated nesting</h3>
+      <div class="row">
+        <div class="col-4 border border-1 border-dark">
+          <img src="../bootstrap_images/product-features.png" class="img-fluid">
+        </div>
+        <div class="col-8 border border-1 border-dark">
+          <div class="row">
+            <div class="col border border-1 border-dark">
+              <h3 style="text-align: center;">Product Features</h3>
+            </div>
+          </div> <!--Nested row-->
+          <div class="row">
+            <div class="col-6 border border-1 border-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel, sequi ut fuga excepturi cum aliquid eaque sapiente corporis consectetur est voluptas veritatis pariatur tenetur illo possimus consequuntur a adipisci.
+            </div>
+            <div class="col-6 border border-1 border-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel, sequi ut fuga excepturi cum aliquid eaque sapiente corporis consectetur est voluptas veritatis pariatur tenetur illo possimus consequuntur a adipisci.
+            </div>
+          </div> <!--Nested row-->
+          <div class="row">
+            <div class="col-6 border border-1 border-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel, sequi ut fuga excepturi cum aliquid eaque sapiente corporis consectetur est voluptas veritatis pariatur tenetur illo possimus consequuntur a adipisci.
+            </div>
+            <div class="col-6 border border-1 border-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vel, sequi ut fuga excepturi cum aliquid eaque sapiente corporis consectetur est voluptas veritatis pariatur tenetur illo possimus consequuntur a adipisci.
+            </div>
+          </div> <!--Nested row-->
+        </div> <!--col-md-8-->
+      </div>
+    </div>
+
+    <!--The back button-->
     <a href="../bootstrap/bootstrap_learning_home.html" style="display: block;">
       <img src="../all_images/back_button.png" style="width: 50px; background-color: transparent;">
     </a>
