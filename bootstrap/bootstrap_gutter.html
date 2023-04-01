@@ -14,40 +14,87 @@
     -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap Gutters</title>
   </head>
   <body>
-    <h1>Bootstrap topics</h1>
-    <ul>
-      <li>
-        <a href="../bootstrap/bootstrap_classes_and_colors.html" style="display:block; text-decoration:none; color: black;">Bootstrap classes and colors
-        </a>
-      </li>
-      <li>
-        <a href="../bootstrap/bootstrap_breakpoints.html" style="display:block; text-decoration:none; color: black;">Bootstrap breakpoints</a>
-      </li>
-      <li>
-        <a href="../bootstrap/bootstrap_containers.html" style="display:block; text-decoration:none; color: black;">Bootstrap containers</a>
-      </li>
-      <li>
-        <a href="../bootstrap/bootstrap_grid.html" style="display:block; text-decoration:none; color: black;">Bootstrap grid</a>
-      </li>
-      <li>
-        <a href="../bootstrap/bootstrap_columns.html" style="display:block; text-decoration:none; color: black;">Bootstrap columns</a>
-      </li>
-      <li>
-        <a href="../bootstrap/bootstrap_gutter.html" style="display:block; text-decoration:none; color: black;">Bootstrap gutters</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="../bootstrap/bootstrap_reboot.html" style="display:block; text-decoration:none; color: black;">Bootstrap reboot</a>
-      </li>
-    </ul>
+    <h1>Bootstrap Gutters</h1>
     <br>
-    <a href="../index.html" style="display: block; text-decoration: none; color: black;">
-      Let's go home :)
-    <br>
+
+    <div class="container border border-5 border-success gx-5">
+      <div class="row bg-warning">
+        Testing out horizontal gutters
+      </div>
+      <div class="row row-cols-2 border border-5 border-danger" style="margin-left: 1.5rem; padding-left: 20px;">
+        <div class="col border border-5 border-dark">
+          Column 1
+        </div>
+        <div class="col border border-5 border-dark">
+          Column 2
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container my-5 border border-5 border-success">
+      <div class="row bg-warning" style="margin-top: -1rem;">
+        Testing out vertical gutters
+      </div>
+      <div class="row border border-5 border-danger" style="margin-left: 1.5rem; margin-top:10px;padding-left: 20px;">
+        <div class="col border border-5 border-dark">
+          Column 1
+        </div>
+        <div class="col border border-5 border-dark">
+          Column 2
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 border border-5 border-success">
+      <div class="row bg-warning">
+        Showing the effect of already present -ve margin on row
+      </div>
+      <div class="row border border-5 border-danger" style="margin-left: 0px;">
+        <div class="col border border-5 border-dark">
+          Column 1
+        </div>
+        <div class="col border border-5 border-dark">
+          Column 2
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 border border-5 border-success">
+      <div class="row bg-warning">
+        Trying out g-0 on row
+      </div>
+      <div class="row border border-5 border-danger g-0">
+        <div class="col border border-5 border-dark">
+          Column 1
+        </div>
+        <div class="col border border-5 border-dark">
+          Column 2
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 border border-5 border-success">
+      <div class="row bg-warning">
+        Trying out g-0 on individual columns
+      </div>
+      <div class="row border border-5 border-danger">
+        <div class="col border border-5 border-dark g-0">
+          Column 1
+        </div>
+        <div class="col border border-5 border-dark g-0">
+          Column 2
+        </div>
+      </div>
+    </div>
+
+    <!--Back button-->
+    <a href="../bootstrap/bootstrap_learning_home.html" style="display: block;">
+      <img src="../all_images/back_button.png" style="width: 50px; background-color: transparent;">
+    </a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
