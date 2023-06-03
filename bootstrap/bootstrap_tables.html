@@ -14,11 +14,391 @@
     -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Tables</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Tables</h1>
     <br>
+
+        <!--Bootstrap table-->
+        <div class="container">
+          <div class="row h3">
+            <div class="col text-center">
+              Bootstrap Table (color)
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <td>1</td>
+                    <td>Light</td>
+                    <td>Yagami</td>
+                    <td>God</td>
+                  </tr>
+                  <tr class="">
+                    <td>2</td>
+                    <td>Edward</td>
+                    <td>Elric</td>
+                    <td>Fullmetal Alchemist</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Alphonse</td>
+                    <td>Elric</td>
+                    <td>Alchemist</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td colspan="2">Goku</td>
+                    <td>Super Saiyan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+    <!--Bootstrap table (color)-->
+    <div class="container my-5">
+      <div class="row h3">
+        <div class="col text-center">
+          Bootstrap Table (color)
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-danger">
+                <td>1</td>
+                <td>Light</td>
+                <td>Yagami</td>
+                <td>God</td>
+              </tr>
+              <tr class="table-success">
+                <td>2</td>
+                <td>Edward</td>
+                <td>Elric</td>
+                <td>Fullmetal Alchemist</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Alphonse</td>
+                <td>Elric</td>
+                <td>Alchemist</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="table-warning" colspan="2">Goku</td>
+                <td>Super Saiyan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--Bootstrap table (striped and hover)-->
+      <div class="container my-5">
+        <div class="row h3">
+          <div class="col text-center">
+            Bootstrap Table (Stripped and Hoverable)
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <table class="table table-danger table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <td>1</td>
+                  <td>Light</td>
+                  <td>Yagami</td>
+                  <td>God</td>
+                </tr>
+                <tr class="">
+                  <td>2</td>
+                  <td>Edward</td>
+                  <td>Elric</td>
+                  <td>Fullmetal Alchemist</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Alphonse</td>
+                  <td>Elric</td>
+                  <td>Alchemist</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td colspan="2">Goku</td>
+                  <td>Super Saiyan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <!--Bootstrap table (active)-->
+    <div class="container my-5">
+      <div class="row h3">
+        <div class="col text-center">
+          Bootstrap Table (Active/highlighting elements)
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead class="">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td>1</td>
+                <td>Light</td>
+                <td>Yagami</td>
+                <td>God</td>
+              </tr>
+              <tr class="table-active">
+                <td>2</td>
+                <td>Edward</td>
+                <td>Elric</td>
+                <td>Fullmetal Alchemist</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Alphonse</td>
+                <td>Elric</td>
+                <td>Alchemist</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td colspan="2" class="table-active">Goku</td>
+                <td>Super Saiyan</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>4</td>
+                <td colspan="2" class="table-active">Goku</td>
+                <td>Super Saiyan</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--Normal table-->
+    <div class="container my-5">
+      <div class="row h3">
+        <div class="col text-center">
+          Normal Table
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Light</td>
+                <td>Yagami</td>
+                <td>God</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Edward</td>
+                <td>Elric</td>
+                <td>Fullmetal Alchemist</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Alphonse</td>
+                <td>Elric</td>
+                <td>Alchemist</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td colspan="2">Goku</td>
+                <td>Super Saiyan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--Responsive table-->
+    <div class="container table-responsive my-5">
+      <div class="row h3">
+        <div class="col text-center">
+          Responsive table (scroll left)
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-2">#</th>
+                <th class="col-3">First Name</th>
+                <th class="col-3">Last Name</th>
+                <th class="col-4">Handle</th>
+                <th class="col-4">Estimated Age</th>
+                <th class="col-4">Description Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-2">1</td>
+                <td class="col-3">Light</td>
+                <td class="col-3">Yagami</td>
+                <td class="col-4">God</td>
+                <td class="col-4">Teenager</td>
+                <td class="col-4">Moves around with a shinigami</td>
+              </tr>
+              <tr class="table-active d-flex">
+                <td class="col-2">2</td>
+                <td class="col-3">Edward</td>
+                <td class="col-3">Elric</td>
+                <td class="col-4">Fullmetal Alchemist</td>
+                <td class="col-4">Teenager</td>
+                <td class="col-4">Can do alchemy without circles</td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-2">3</td>
+                <td class="col-3">Alphonse</td>
+                <td class="col-3">Elric</td>
+                <td class="col-4">Alchemist</td>
+                <td class="col-4">Teenager but younger than Edward Elric</td>
+                <td class="col-4">Soul attached to a metal armour</td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-2">4</td>
+                <td colspan="2" class="table-active col-6">Goku</td>
+                <td class="col-4">Super Saiyan</td>
+                <td class="col-4">Unknown</td>
+                <td class="col-4">Not a human</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="d-flex">
+                <td class="col-2">5</td>
+                <td colspan="2" class="table-active col-6">Vegita</td>
+                <td class="col-4">Super Saiyan</td>
+                <td class="col-4">Unknown</td>
+                <td class="col-4">Not a human</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row h3">
+        <div class="col text-center">
+          Non Responsive table (scroll left)
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr class="d-flex">
+                <th class="col-2">#</th>
+                <th class="col-3">First Name</th>
+                <th class="col-3">Last Name</th>
+                <th class="col-4">Handle</th>
+                <th class="col-4">Estimated Age</th>
+                <th class="col-4">Description Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-2">1</td>
+                <td class="col-3">Light</td>
+                <td class="col-3">Yagami</td>
+                <td class="col-4">God</td>
+                <td class="col-4">Teenager</td>
+                <td class="col-4">Moves around with a shinigami</td>
+              </tr>
+              <tr class="table-active d-flex">
+                <td class="col-2">2</td>
+                <td class="col-3">Edward</td>
+                <td class="col-3">Elric</td>
+                <td class="col-4">Fullmetal Alchemist</td>
+                <td class="col-4">Teenager</td>
+                <td class="col-4">Can do alchemy without circles</td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-2">3</td>
+                <td class="col-3">Alphonse</td>
+                <td class="col-3">Elric</td>
+                <td class="col-4">Alchemist</td>
+                <td class="col-4">Teenager but younger than Edward Elric</td>
+                <td class="col-4">Soul attached to a metal armour</td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-2">4</td>
+                <td colspan="2" class="table-active col-6">Goku</td>
+                <td class="col-4">Super Saiyan</td>
+                <td class="col-4">Unknown</td>
+                <td class="col-4">Not a human</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="d-flex">
+                <td class="col-2">5</td>
+                <td colspan="2" class="table-active col-6">Vegita</td>
+                <td class="col-4">Super Saiyan</td>
+                <td class="col-4">Unknown</td>
+                <td class="col-4">Not a human</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
 
     <!--Back button-->
     <a href="../bootstrap/bootstrap_learning_home.html" style="display: block;">
