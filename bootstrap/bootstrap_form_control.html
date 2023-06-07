@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--This tag discriminates between mobile phone's physical resolution and displayable resolution-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!--The integrity attribute-->
+    <!--The integrity attribute allows a browser to check the fetched script to ensure that the code is never loaded if the source has been manipulated. The webpage holds the hash and the server holds the file (the .js file in this case). The browser downloads the file, then checks it, to make sure that it is a match with the hash in the integrity attribute-->
+    <!--
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Form Control</title>
+  </head>
+  <body>
+    <h1>Form Control !!!</h1>
+    <br>
+
+    <div class="container">
+      <!--Row 1-->
+      <div class="row">
+        <p>&ltinput&gt element with attribute <i class="fw-bold">type = text</i> </p>
+        <input type="text" class="form-control">
+      </div>
+      <!--Row 2-->
+      <div class="row my-5">
+        <p>
+          HTML element &lttextarea&gt
+        </p>
+        <textarea rows="3" class="form-control"></textarea>
+      </div>
+
+      <!--Row 3-->
+      <div class="row">
+        Trying out different sizes of &ltinput&gt element
+      </div>
+      <div class="row">
+        <input type="text" class="form-control form-control-lg" placeholder=".form-control-lg">
+        <input type="text" class="form-control" placeholder=".form-control">
+        <input type="text" class="form-control form-control-sm" placeholder=".form-control-sm">
+      </div>
+
+      <!--Row 4-->
+      <div class="row" style="margin-top:3rem">
+        Trying out various disabled inputs
+      </div>
+      <div class="row">
+        <input type="text" class="form-control" placeholder="Disabled input" disabled>
+        <input type="text" class="form-control" placeholder="Disabled readonly input" disabled readonly>
+        <input type="text" class="form-control" placeholder="Readonly input" readonly>
+      </div>
+
+      <!--Row 5-->
+      <div class="row" style="margin-top: 3rem;">
+        <p>Trying out the attribute <i class="fw-bold">form-control-plaintext</i></p>
+        <input type="text" class="form-control-plaintext" value=".form-control-plaintext readonly" readonly>
+        <input type="text" class="form-control-plaintext" value=".form-control-plaintext disabled" disabled>
+      </div>
+
+      <!--Row 6-->
+      <div class="row" style="margin-top:3rem">
+        Some button styles (Buttons should be placed inside &ltdiv&gt to prevent anomaly)
+        <div>
+          <button type="sumbit" class="btn btn-primary">Submit</button> <br><br>
+          <button type="sumbit" class="btn btn-outline-primary">Submit</button>
+          <br><br>
+        </div>
+        <br><br>
+        <button type="sumbit" class="btn btn-primary">Submit</button>
+        <br><br><br><br><br><br>
+        <button type="sumbit" class="btn btn-outline-primary">Submit</button>
+      </div>
+
+      <!--Row 7-->
+      <div class="row"  style="margin-top:3rem">
+        <p>Dealing with files</p>
+        <form>
+          <label for="file1" class="form-label">Select a single file:</label>
+          <input type="file" class="form-control" id="file1">
+          <label for="file2" class="form-label">Select multiple files</label>
+          <input type="file" class="form-control" id="file2" multiple>
+          <div>
+            <button type="submit" class="btn btn-primary" style="margin-top:1rem">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <!--Row 8-->
+      <div class="row" style="margin-top:3rem">
+        <p>Color Picker</p>
+        <label for="color1" class="form-label">Please select a color:</label>
+        <input type="color" class="form-control form-control-color" id="color1">
+      </div>
+
+      <!--Row 9-->
+      <div class="row border border-1" style="margin-top:3rem">
+        <p>Data List:-</p>
+        <form>
+          <label for="DataListExample" class="form-label">Datalist Example</label>
+          <input list="statelist" id="DataListExample" class="form-control" placeholder="Type your state">
+          <datalist id="statelist">
+            <option value="Karnataka"></option>
+            <option value="Kerala"></option>
+            <option value="Maharashtra"></option>
+            <option value="Madhya Pradesh"></option>
+            <option value="Tamil Nadu"></option>
+            <option value="Punjab"></option>
+          </datalist>
+        </form>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!--Back button-->
+    <a href="../bootstrap/bootstrap_learning_home.html" style="display: block;">
+      <img src="../all_images/back_button.png" style="width: 50px; background-color: transparent;">
+    </a>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
