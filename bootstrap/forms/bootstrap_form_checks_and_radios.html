@@ -20,6 +20,165 @@
     <h1>Checks & radios !!!</h1>
     <br>
 
+    <div class="container">
+      <div class="row row-cols-2 align-items-center">
+        <div class="col border border-1">
+          <p class="">Pre-checked and disabled check boxes</p>
+        </div>
+        <div class="col border border-1 align-self-baseline">
+          <form>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="check1">
+              <label for="check1" class="form-check-label">
+                Normal check box
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="check2" checked>
+              <label for="check2" class="form-check-label">
+                Pre selected check box
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="check3" checked disabled>
+              <label for="check3" class="form-check-label">
+                Disabled and preselected checkbox
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!--Row 2-->
+      <div class="row row-cols-2">
+        <div class="col border border-1">
+          Radio buttons. Note that a group of radio buttons should have the same name otherwise multiple radio buttions can be selected.
+        </div>
+        <div class="col border border-1">
+          <form class="">
+            <input type="radio" class="form-check-input" id="radio1" name="state">
+            <label for="radio1" class="form-check-label">Maharashtra
+            </label>
+            <br>
+            <input type="radio" class="form-check-input" id="radio2" name="state">
+            <label for="radio2" class="form-check-label">Karnataka
+            </label>
+            <br>
+            <input type="radio" class="form-check-input" id="radio3" name="state">
+            <label for="radio3" class="form-check-label">Haryana
+            </label>
+            <br>
+            <input type="radio" class="form-check-input" id="radio4" name="state">
+            <label for="radio4" class="form-check-label">Uttar Pradesh
+            </label>
+          </form>
+        </div>
+      </div>
+
+      <!--Row 3-->
+      <div class="row row-cols-2" style="margin-top:1.5rem">
+        <div class="col border border-1">
+          Pre-selected and disabled radio button
+        </div>
+        <div class="col border border-1">
+          <form>
+            <input type="radio" class="form-check-input" id="radio5" name="yesno" checked>
+            <label for="radio5">Yes</label>
+            <br>
+            <input type="radio" class="form-check-input" id="radio6" name="yesno">
+            <label for="radio6">No</label>
+            <br>
+            <input type="radio" class="form-check-input" id="radio7" name="disabled" disabled checked>
+            <label for="radio7">Disabled</label>
+          </form>
+        </div>
+      </div>
+
+      <!--Row 3-->
+      <div class="row row-col-2" style="margin-top: 1.5rem;">
+        <div class="col border border-1">
+          Switches
+        </div>
+        <div class="col border border-1">
+          <form class="form-switch">
+            <input type="checkbox" class="form-check-input" id="sw1" name="disabled">
+            <label for="sw1">Switch 1</label>
+            <br>
+            <input type="checkbox" class="form-check-input" id="sw2" name="disabled" checked>
+            <label for="sw2">Switch 2</label>
+            <br>
+            <input type="checkbox" class="form-check-input" id="sw3" name="disabled" checked disabled>
+            <label for="sw3">Switch 3</label>
+            <br>
+            <input type="checkbox" class="form-check-input" id="sw4" name="disabled" disabled>
+            <label for="sw4">Switch 4</label>
+          </form>
+        </div>
+      </div>
+
+      <!--Row 5-->
+      <div class="row row-cols-2" style="margin-top:1.5rem">
+        <div class="col border border-1">
+          Using the class 'form-check-inline'. Does not make sense to be used with radio as multiple &ltform&gt elements have to be used.
+        </div>
+        <div class="col border border-1">
+          <form class="form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check4" name="yesno" checked>
+            <label for="check4">Yes</label>
+          </form>
+          <form class="form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check5" name="yesno">
+            <label for="check5">No</label>
+          </form>
+          <form class="form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check6" name="disabled" disabled checked>
+            <label for="check6">Disabled</label>
+          </form>
+        </div>
+      </div>
+
+      <!--Row 6-->
+      <div class="row row-cols-2" style="margin-top:1.5rem">
+        <div class="col border border-1">
+          Checkbox button. Label is mandatory.
+        </div>
+        <div class="col border border-1">
+          <form class="">
+            <input type="checkbox" class="btn-check" id="check7" checked>
+            <label for="check7" class="btn btn-outline-primary">Yes</label>
+          </form>
+          <form class="">
+            <input type="checkbox" class="btn-check" id="check8">
+            <label for="check8" class="btn btn-outline-dark">No</label>
+          </form>
+        </div>
+      </div>
+
+      <!--Row 7-->
+      <div class="row row-cols-2" style="margin-top:1.5rem">
+        <div class="col border border-1">
+          Radio button. Label is mandatory.
+        </div>
+        <div class="col border border-1">
+          <form class="">
+            <input type="radio" class="btn-check" id="check10" name="foo">
+            <label for="check10" class="btn btn-outline-primary">Yes</label>
+            <br>
+            <input type="radio" class="btn-check" id="check11" name="foo">
+            <label for="check11" class="btn btn-outline-dark">No</label>
+            <br>
+            <input type="radio" class="btn-check" id="check12" name="foo">
+            <label for="check12" class="btn btn-outline-warning">Maybe</label>
+            <br>
+            <input type="radio" class="btn-check" id="check13" name="foo">
+            <label for="check13" class="btn btn-outline-danger">Definitely No</label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
     <!--Back button-->
     <a href="../../bootstrap/bootstrap_learning_home.html" style="display: block;">
       <img src="../../all_images/back_button.png" style="width: 50px; background-color: transparent;">
