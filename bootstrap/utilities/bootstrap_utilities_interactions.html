@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--This tag discriminates between mobile phone's physical resolution and displayable resolution-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!--The integrity attribute-->
+    <!--The integrity attribute allows a browser to check the fetched script to ensure that the code is never loaded if the source has been manipulated. The webpage holds the hash and the server holds the file (the .js file in this case). The browser downloads the file, then checks it, to make sure that it is a match with the hash in the integrity attribute-->
+    <!--
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Interactions !!!</title>
+  </head>
+  <body>
+    <h1>Interactions</h1>
+    <br>
+
+    <div class="container">
+      <p><u>
+        The below text will be selected by single click using class <kbd>user-select-all</kbd>:-
+      </u></p>
+      <div class="user-select-all">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloribus quasi laborum, laboriosam, corrupti quaerat natus cupiditate voluptatibus tempore minus vel. Assumenda, harum! Expedita amet fugit earum obcaecati qui eveniet?
+      </div>
+
+      <p class="mt-4"><u>
+        The below text will be selected by double click (default) using class <kbd>user-select-auto</kbd>:-
+      </u></p>
+      <div class="user-select-auto">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloribus quasi laborum, laboriosam, corrupti quaerat natus cupiditate voluptatibus tempore minus vel. Assumenda, harum! Expedita amet fugit earum obcaecati qui eveniet?
+      </div>
+
+      <p class="mt-4"><u>
+        The below text can't be selected using class <kbd>user-select-none</kbd>:-
+      </u></p>
+      <div class="user-select-none">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloribus quasi laborum, laboriosam, corrupti quaerat natus cupiditate voluptatibus tempore minus vel. Assumenda, harum! Expedita amet fugit earum obcaecati qui eveniet?
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <p>
+        <a href="#" class="pe-none"> Can't be clicked</a>
+      </p>
+      <p>
+        <a href="#" class="pe-auto"> Ca be clicked</a>
+      </p>
+    </div>
+
+    <!--Back button-->
+    <a href="../../bootstrap/bootstrap_learning_home.html" style="display: inline;">
+      <img src="../../all_images/back_button.png" style="width: 50px; background-color: transparent;">
+    </a>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+  </body>
+</html>
