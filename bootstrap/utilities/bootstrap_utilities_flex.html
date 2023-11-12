@@ -24,8 +24,33 @@
   </style>
   <body>
     <h1>Welcome to Flexbox</h1>
-    <br><br>
 
+    <div class="h3 text-primary">
+      Summary of <b>flex:grow</b> and <b>flex:basis</b>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ul>
+          <li>
+            If any div container has flex:grow, it will expand to take up the 100% of remaining column space.
+          </li>
+          <li>
+            flex-basis specifies the width of individual div containers. If flex-basis is 0, minimum column width will be used.
+          </li>
+          <li>
+            Hence flex:grow and flex-basis:0 are a bit contradictory
+          </li>
+          <li>
+            If we are using <b>flex-basis </b> apart from <b>0</b> or <b>auto</b>, it is same as specifying the column width/height
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <br><br>
+    <div>
+      Just <kbd>display:flex</kbd>. No <b>flex:grow</b> or <b>flex:wrap</b>
+    </div>
     <div class="bd-highlight d-flex">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
@@ -33,117 +58,195 @@
       <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
     </div>
 
-    <div class="bd-highlight d-flex mt-4">
+    <div class="mt-4">
+      Just <kbd>display:flex</kbd>. No <b>flex:grow</b> or <b>flex:wrap</b>
+    </div>
+    <div class="bd-highlight d-flex">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 4</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 5</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 6</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 7</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 8</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 9</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 10</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 11</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 12</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 13</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 14</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 15</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 16</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 17</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 18</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 19</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 20</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 21</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 22</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 23</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 24</div>
     </div>
 
-    <div class="bd-highlight d-flex flex-wrap mt-4">
+    <div class="mt-4">
+      Just <kbd>display:flex</kbd> & <kbd>flex:wrap</kbd>. No <b>flex:grow</b>
+    </div>
+    <div class="bd-highlight d-flex flex-wrap">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
-
+      <div class="p-2 m-1 bd-highlight"> Flex Item 4</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 5</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 6</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 7</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 8</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 9</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 10</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 11</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 12</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 13</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 14</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 15</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 16</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 17</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 18</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 19</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 20</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 21</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 22</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 23</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 24</div>
     </div>  
 
-    <div class="bd-highlight d-flex flex-wrap mt-4">
+    <div class="mt-4">
+      Just <kbd>display:flex</kbd> & <kbd>flex:wrap</kbd>. No <b>flex:grow</b>
+    </div>
+    <div class="bd-highlight d-flex flex-wrap">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A distinctio et impedit deserunt, repellat, esse laudantium architecto quibusdam sequi ea adipisci! Esse amet nesciunt vero itaque eligendi, delectus vitae neque!</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
     </div>
 
-    <div class="bd-highlight mt-4">
+    <div class="mt-4">
+      <kbd>display:flex</kbd>, <kbd>flex:wrap</kbd> & <kbd>flex:grow</kbd>
+    </div>
+    <div class="text-danger bg-warning">
+      Note that display:flex & flex:wrap is a property of parent div and flex:grow has to be the property of all the child divs.
+    </div>
+    <div class="bd-highlight d-flex flex-wrap">
+      <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
+      <div class="p-2 m-1 bd-highlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A distinctio et impedit deserunt, repellat, esse laudantium architecto quibusdam sequi ea adipisci! Esse amet nesciunt vero itaque eligendi, delectus vitae neque!</div>
+      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
+    </div>
+
+    <div class="mt-4">
+      <kbd>display:flex</kbd> is not used
+    </div>
+    <div class="bd-highlight mt-1">
       <span class="p-2 m-1 bd-highlight flex-grow-1"> Flex Item 1</span>
       <span class="p-2 m-1 bd-highlight flex-grow-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae numquam rerum nemo odio nobis quos id! Quaerat maiores voluptates similique. Dolorum debitis mollitia suscipit harum natus possimus consequatur iste sed!</span>
       <span class="p-2 m-1 bd-highlight flex-grow-1"> Flex Item 3</span>
-    </div>ƒ
+    </div>
 
-
-    <div class="bd-highlight d-flex mt-4">
+    <div class="mt-4">
+      <kbd>display:flex</kbd> with <b>flex:grow</b> on one of the child divs
+    </div>
+    <div class="bd-highlight d-flex">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
-      <div class="p-2 flex-grow-1 m-1 bd-highlight"> Flex Item 1</div>
+      <div class="p-2 flex-grow-1 m-1 bd-highlight"> Flex Item 1 (with <b>flex:grow</b>)</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
     </div>
 
-    <div class="bd-highlight d-flex mt-4">
+    <div class="mt-4">
+      Just <kbd>display:flex</kbd>. No <b>flex:grow</b> or <b>flex:wrap</b>
+    </div>
+    <div class="bd-highlight d-flex">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
     </div>
 
-    <div class="bd-highlight d-flex mt-4">
-      <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
-      <div class="p-2 flex-grow-1 m-1 bd-highlight"> Flex Item 1</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
+    <div class="mt-4">
+      <kbd>display:flex</kbd> with <b>flex:grow</b> and <b>flex-basis:auto</b>
+    </div>   
+    <div class="text-danger bg-warning">
+      Here the blank space at the end of each div container is equal
     </div>
-
-    <div class="bd-highlight d-flex mt-4">
+    <div class="bd-highlight d-flex">
       <div class="p-2 flex-grow-1 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 flex-grow-1 m-1 bd-highlight"> Flex Item 11111111111111111111</div>
       <div class="p-2 flex-grow-1 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 flex-grow-1 m-1 bd-highlight"> Flex Item</div>
     </div>
 
-    <div class="bd-highlight d-flex mt-4">
+    <div class="mt-4">
+      <kbd>display:flex</kbd> with <b>flex:grow</b> and <b>flex-basis:0</b>
+    </div>   
+    <div class="text-danger bg-warning">
+      Here the width of each div container is same
+    </div>
+    <div class="bd-highlight d-flex">
       <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
       <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 11111111111111111111</div>
       <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
       <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item</div>
     </div>
 
-    <div class="bd-highlight d-flex flex-column mt-4">
-      <div class="p-2 m-1 bd-highlight" style="flex-basis: 1;"> Flex Item 1</div>
+    <div class="mt-4">
+      <kbd>display:flex</kbd> with <b>flex:grow</b> and <b>flex-basis:0</b>
+    </div>   
+    <div class="text-danger bg-warning">
+      Here the flex-basis is 0 for all but 1st item.
+    </div>
+    <div class="bd-highlight d-flex">
+      <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
+      <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 1;"> Flex Item 11111111111111111111</div>
+      <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
+      <div class="p-2 flex-grow-1 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item</div>
+    </div>
+
+    <div class="mt-4">
+      <kbd>display:flex</kbd> with <b>flex-grow:0</b> and <b>flex-basis:0</b>
+    </div> 
+    <div class="text-danger bg-warning">
+      Because flex:grow is 0, all the containers are taking the minimum width
+    </div> 
+    <div class="bd-highlight d-flex">
+      <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 11111111111111111111</div>
       <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight" style="flex-basis: 0"> Flex Item</div>
-      <div class="p-2 m-1 bd-highlight" style="flex-basis: 200px;">A B C D</div>
+      <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;">A B C D</div>
     </div>
 
-    <div class="bd-highlight d-flex mt-4 justify-content-center">
+    <div class="mt-4">
+      <kbd>display:flex</kbd> with <b>flex:grow</b> and <b>flex-basis:0</b>
+    </div> 
+    <div class="text-danger bg-warning">
+      2 contradictory parameters. One tell to grow and one tells to take the least space. <br><b>But at the end, both end up taking the same space!!!!</b>
+    </div> 
+    <div class="bd-highlight d-flex">
+      <div class="p-2 m-1 bd-highlight flex-grow-1" style="flex-basis: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatibus? Quia ullam animi mollitia minus dolore illum aut dolores tenetur eligendi odio blanditiis officia, excepturi dolor itaque eos iure consequatur?</div>
+      <div class="p-2 m-1 bd-highlight flex-grow-1" style="flex-basis: 0;">A B C D</div>
+    </div>
+
+    <div class="mt-4">
+      Changing the flex direction
+    </div>
+    <div class="bd-highlight d-flex flex-column">
+      <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
+      <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 11111111111111111111</div>
+      <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
+      <div class="p-2 m-1 bd-highlight" style="flex-basis: 0"> Flex Item</div>
+      <div class="p-2 m-1 bd-highlight" style="flex-basis: 200px;">A B C D (Height is changed using <b>flex-basis</b>)</div>
+    </div>
+
+    <div class="mt-4">
+      The <b>div containers</b> are moved to center using <b><kbd>justify-content</kbd>-center</b>
+    </div>
+    <div class="bd-highlight d-flex justify-content-center">
       <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 11111111111111111111</div>
       <div class="p-2 m-1 bd-highlight" style="flex-basis: 0;"> Flex Item 1</div>
@@ -162,17 +265,19 @@
     <br><br><br><br>
     <br><br><br><br>
 
-    <div class="bd-highlight d-flex align-items-start mt-4" style="height: 100px;">
+    <div class="mt-4">
+      The vertical alignment of <b>div contianers</b> is changed using <b><kbd>align-items</kbd>-start/end</b> or <b><kbd>align-slef</kbd>-start/self</b>
+    </div>
+    <div class="bd-highlight d-flex align-items-start" style="height: 100px;">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 align-self-end bd-highlight"> Flex Item 11111111111111111111</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item</div>
     </div>
 
-    <div class="bd-highlight d-flex align-items-start mt-4" style="">
+    <div class="bd-highlight d-flex align-items-start mt-5" style="">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight me-auto"> Flex Item 2 (.me-auto)</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 4</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 5</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 5</div>
@@ -181,7 +286,6 @@
     <div class="bd-highlight d-flex align-items-start mt-4" style="">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
-      <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 4</div>
       <div class="p-2 m-1 bd-highlight ms-auto"> Flex Item 5 (.ms-auto)</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 5</div>
@@ -196,10 +300,14 @@
       <div class="p-2 m-1 bd-highlight"> Flex Item 5</div>
     </div>
 
+    <div class="mt-4">
+      Using <b><kbd>align-items</kbd>-start/end</b> on vertical flex <br>
+      Note that <kbd>flex-wrap:wrap</kbd> has no effect
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-6">
-          <div class="bd-highlight d-flex flex-column mt-4" style="height: 400px;">
+          <div class="bd-highlight d-flex flex-column" style="height: 400px;">
             <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
@@ -209,9 +317,9 @@
           </div> 
         </div>
         <div class="col-6">
-          <div class="bd-highlight d-flex flex-column mt-4 align-items-start" style="height: 400px;">
+          <div class="bd-highlight d-flex flex-column align-items-start" style="height: 400px;">
             <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
-            <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
+            <div class="p-2 m-1 bd-highlight align-self-end"> Flex Item 2</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 4</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 5</div>
@@ -251,10 +359,13 @@
     <br><br><br><br>
     <br><br><br><br>
 
-    <div class="container-fluid">
+    <div>
+      <kbd>align-items-start</kbd> vs <kbd>align-content-start</kbd>. Very slight difference in spacing
+    </div>
+    <div class="container-fluid mt-2">
       <div class="row">
         <div class="col-6">
-          <div class="bd-highlight d-flex mt-4 align-items-start flex-wrap" style="width:80%; height: 300px;">
+          <div class="bd-highlight d-flex align-items-start flex-wrap" style="width:80%; height: 300px;">
             <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
@@ -267,7 +378,7 @@
           </div>  
         </div>
         <div class="col-6">
-          <div class="bd-highlight d-flex mt-4 align-content-start flex-wrap" style="width:80%; height: 300px;">
+          <div class="bd-highlight d-flex align-content-start flex-wrap" style="width:80%; height: 300px;">
             <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
             <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
@@ -318,7 +429,10 @@
     <br><br><br><br>
     <br><br><br><br>
 
-    <div class="bd-highlight d-inline-flex mt-4" style="">
+    <div class="text-danger bg-warning">
+      Difference betweeb the classes <kbd>d-flex</kbd> and <kbd>d-inline-flex</kbd>
+    </div>
+    <div class="bd-highlight d-flex mt-2" style="">
       <div class="p-2 m-1 bd-highlight"> Flex Item 1</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 2</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
@@ -331,6 +445,10 @@
       <div class="p-2 m-1 bd-highlight"> Flex Item 3</div>
       <div class="p-2 m-1 bd-highlight"> Flex Item 4</div>
     </div> 
+    <span>
+      An inline element can take up this space
+    </span>
+
 
 
     <br><br><br><br>
