@@ -14,7 +14,7 @@ function circleResize(event, circleName, spanName) {
     //}
 };
 
-//Get the width first time
+//Get the width first time and set the dimensions
 circleResize(null,"divclearfix1","span1");
 circleResize(null,"divclearfix2","span2");
 circleResize(null,"divclearfix3","span3");
